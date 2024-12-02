@@ -115,6 +115,17 @@ main h2 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
+  background-color: var(--white);
+  padding: 16px;
+  height: 300px;
+  border-radius: 16px;
+  align-items: center;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .project {
@@ -131,8 +142,20 @@ main h2 {
 
 .announcements {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
   gap: 8px;
+  background-color: var(--white);
+  height: 300px;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+
+.announcement + .announcement {
+  border-top: 1px solid black;
+  padding-top: 16px
 }
 
 .project-description {
